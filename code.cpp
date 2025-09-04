@@ -1,7 +1,15 @@
 #include <iostream>
 
 using namespace std;
-//just for initial commit
+
+struct Restaurant{
+    int hourOpen;
+    int hourClose;
+    string type;
+    string address;
+    int rating;
+};
+
 int main() {
- s
+   cout << "e" << endl;
 }
