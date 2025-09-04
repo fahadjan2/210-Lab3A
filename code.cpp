@@ -1,7 +1,8 @@
+// COMSC-210 | Lab 3A | Fahad Fawad Ahmad
+// IDE used: Visual Studio
 #include <iostream>
 
 using namespace std;
-
 
 struct Restaurant{
     int hourOpen;
@@ -19,7 +20,9 @@ int main() {
     printData(restaurantInputted);
 }
 
-
+// initializer() asks the user for input and intitializes a struct with the data
+// arguments: no arguments
+// returns: returns a struct
 Restaurant initializer(){
     Restaurant restaurantInput;
     cout << "Restaurant Info:" << endl;
@@ -49,10 +52,12 @@ Restaurant initializer(){
     return restaurantInput;
 }
 
-
+// printData() prints the data given
+// arguments: struct Restaurant
+// returns: does not return
 void printData(Restaurant restaurantData){
     cout << "Restaurant opens at " << restaurantData.hourOpen << " and closes at " << restaurantData.hourClose << endl;
-    cout << "Restaurant is a " << restaurantData.type << " type of restaurant" << endl;
+    cout << "Restaurant is a(n) " << restaurantData.type << " type of restaurant" << endl;
     cout << "Restaurant address is " << restaurantData.address << endl;
     cout << "Restaurant rating is " << restaurantData.rating << " stars" << endl;
 }
